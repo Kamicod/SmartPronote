@@ -11,26 +11,26 @@ const configPath = join(
 export const config: Config = JSON.parse(readFileSync(configPath, 'utf8'));
 
 export interface Config {
-  enableApi: boolean;
-  accountTimeout: number;
-  refreshEvery: number;
+  enableApi: true;
+  accountTimeout: 3600;
+  refreshEvery: 300;
   accounts: {
-    url: string;
-    username: string;
-    password: string;
+    url: "https://3500045x.index-education.net/pronote/eleve.html";
+    username: "CHRKA";
+    password: "Pronote2024Orange*";
     cas: string;
     google?: {
-      email: `${string}@${string}.${string}`;
+      email: `${"kchraibi3.0"}@${"gmail"}.${"com"}`;
     };
     modules: {
       googleCalendar?: {
-        calendarId?: string;
+        calendarId?: "kchraibi3.0@gmail.com";
       };
       googleTasks?: {
-        taskListId: string;
+        taskListId: "MDM1ODAyNzE4NzkzMTE5NTU3MTU6MDow";
       };
       iftttGrades?: {
-        key: string;
+        key: "3RtS7KZFZEbleRW4f3Ls1";
       };
     };
   }[];
